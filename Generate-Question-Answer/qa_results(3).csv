@@ -1,0 +1,4 @@
+Question,Answer
+What problem is described in the context of five philosophers sitting around a table?,The dining philosopher's problem.
+What is the condition for a philosopher to pick up two chopsticks according to the solution?,Both the left and right chopsticks must be available.
+What are the three conditions that a solution to the critical section problem must satisfy?,"Mutual Exclusion, Progress, and Bounded Waiting."
