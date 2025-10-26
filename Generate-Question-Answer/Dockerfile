@@ -1,19 +1,11 @@
 FROM python:3.13.5-slim
 
-WORKDIR /app
-
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    curl \
-    git \
-    && rm -rf /var/lib/apt/lists/*
-
 ENV STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
 
-COPY pyproject.toml ./
-COPY src/ ./src/
 
-RUN pip3 install .
+COPY main.py
+
+RUN pip3 install -r requirements.txt
 
 EXPOSE 8501
 
